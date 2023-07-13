@@ -1,5 +1,5 @@
 header {
-    width: 40%;
+    width: 100%;
 }
 
 .header-content {
@@ -18,7 +18,62 @@ i {
 }
 
 .header-icons a:hover {
-    i{
-        color: ;
+    i {
+        animation: translatey 0.8s infinite alternate;
+        color: $red-light;
     }
+}
+
+@keyframes translatey {
+    from {
+        transform: translatey(0) scale(1);
+    }
+
+    to {
+        transform: translatey(-8px) scale(1.1);
+    }
+}
+
+.header-button {
+    border: 1px solid $white-normal;
+    padding: 6px 20px;
+    border-radius: 4px;
+    color: $white-normal;
+    background-color: transparent;
+    transition: background-color 0.8s
+}
+
+.header-button:hover {
+    border: 1px solid $red-light;
+    background-color: $red-light;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    i{
+        margin-top: 16px;
+        font-size: 34px;
+    }
+    .header-logo img {
+        width: 160PX;
+        margin-top: 46PX;
+    }
+
+    .header-button{
+        display: none;
+    }
+
 }
