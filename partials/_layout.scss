@@ -225,10 +225,17 @@
        height: 500px;
        align-items: center;
        justify-content: center;
+      
     }
 
     .haircut img{
         max-width: 200px;
+    }
+
+    .haircut-info{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
