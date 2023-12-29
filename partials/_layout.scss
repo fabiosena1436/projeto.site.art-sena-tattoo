@@ -181,6 +181,7 @@
 
 .haircuts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
@@ -217,6 +218,11 @@
     z-index: 99;
 }
 
+#haircuts-list{
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+}
+
 @media screen and (max-width: 768px){
     .haircuts{
         flex-direction: column;
@@ -232,6 +238,12 @@
 
     .haircut img{
         max-width: 200px;
+    }
+
+    #haircuts-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .haircut-info{

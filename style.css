@@ -105,7 +105,7 @@ i {
 
 .hero {
   color: #fff;
-  min-height: 50vw;
+  min-height: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,6 +233,7 @@ i {
 
 .haircuts {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
@@ -268,6 +269,11 @@ i {
   z-index: 99;
 }
 
+#haircuts-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+
 @media screen and (max-width: 768px) {
   .haircuts {
     flex-direction: column;
@@ -280,6 +286,11 @@ i {
   }
   .haircut img {
     max-width: 200px;
+  }
+  #haircuts-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .haircut-info {
     align-items: center;
